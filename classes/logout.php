@@ -6,6 +6,6 @@ if(!isset($_SESSION)){
 
 session_destroy();
 
-header("Location: login.php");
+header("Location: \ProjetoLicense_git\PlugDFe_valida_php\login.php");
 
 ?>

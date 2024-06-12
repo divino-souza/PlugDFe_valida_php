@@ -1,6 +1,6 @@
 <?php
 
-include('conexao.php');
+include('classes/conexao.php');
 
 if(isset($_POST['userlogin']) || isset($_POST['senha'])){
 
@@ -30,7 +30,7 @@ if(isset($_POST['userlogin']) || isset($_POST['senha'])){
                 $_SESSION['id'] = $usuario['id'];
                 $_SESSION['nome'] = $usuario['nome'];
 
-                header("Location: index_hom.php");
+                header("Location: classes\index_hom.php");
  
         }{
             echo "Falha ao logar! Email ou senha incorretos";
